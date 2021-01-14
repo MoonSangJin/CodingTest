@@ -1,3 +1,2 @@
-a = float(input())
-b = round(a, 2)
-print('%.2f' % b)
+a, b, c = map(int, input().split("."))
+print("%02d-%02d-%04d" % (c, b, a))

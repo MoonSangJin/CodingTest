@@ -1,2 +1,3 @@
-a, b, c = map(int, input().split("."))
-print("%02d-%02d-%04d" % (c, b, a))
+a = float(input())
+b = round(a, 11)
+print('%.11f' % b)

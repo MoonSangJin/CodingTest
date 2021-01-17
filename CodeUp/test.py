@@ -1,3 +1,2 @@
-a = float(input())
-b = round(a, 11)
-print('%.11f' % b)
+num1, num2 = map(int, input().split())
+print(num1/num2)

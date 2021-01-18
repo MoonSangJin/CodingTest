@@ -1,2 +1,6 @@
-num1, num2 = map(int, input().split())
-print(num1/num2)
+data = list(map(int, input().split()))
+for i in range(len(data)):
+    if data[i] % 2 == 0:
+        print('even')
+    else:
+        print('odd')

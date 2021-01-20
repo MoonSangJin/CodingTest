@@ -1,0 +1,28 @@
+a = float(input())  //실수입력
+b = round(a, 2) //소수점 3번째에서 반올림처리해서 2번째까지만 나타내기
+print('%.2f' % b) //소수점 둘째자리까지만 나타내기
+input()은 입력받은걸 문자열로 나타냄
+input().split()은 입력받은 문자열을 공백으로 나눠서 리스트로 만듬
+map(int,input().split())은 만들어진 리스트의 모든원소에 int 함수 적용
+list(map(int,input().split()))는 모든 원소에 int함수 적용시킨 결과를 다시 리스트로 만듬
+
+y, m, d = map(int, input().split('.'))  //.으로 나눠진걸 int로 만들고
+print('%d.%02d.%02d' % (y, m, d)) // 문자열형식으로 나타낼건데 들어갈 변수는 따로 %로 넣는다 %02
+
+a,b=input().split('.') //.을 기준으로 문자열 두개를 받는데
+print(a+b) 하면 붙여서 문자열로나오는데
+print(a,b) 하면 a나오고 한 칸 띄고 b가 나온다
+
+
+data = input()
+for i in range(len(data)): //문자열도 배열이니까 인덱스 존재
+    print("["+str(int(data[i])*(10**(len(data)-(i+1))))+"]") // **은 제곱,int로 바꾼거는 +로 출력하려면 다시 str해주자 
+
+enumerate 함수는 index랑 value를 튜플로 반환하는데 보통 for문에서 많이 쓰인다.
+
+
+2진수 : bin()
+8진수 : oct()
+16진수 : hex()
+
+counter함수

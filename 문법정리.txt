@@ -26,3 +26,8 @@ enumerate 함수는 index랑 value를 튜플로 반환하는데 보통 for문에
 16진수 : hex()
 
 counter함수
+
+find 함수는 찾는 문자가 문자열 안에 포함되지 않은 경우 -1을 출력하지만 index함수는 >AttributeError가 발생한다
+
+for x in alphabet:
+    print(s.find(x), end=' ') //붙여서 쓰는법

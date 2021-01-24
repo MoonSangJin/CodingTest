@@ -36,3 +36,16 @@ for x in alphabet:
 여러번 반복 출력은 곱하기를 사용해도된다.
 for i in range(len(s)):
         print(s[i]*r, end='')
+
+a[1:4]는 a[0]~a[3]까지 가져오고 이것을 슬라이싱이라한다.2f
+
+리스트 컴프리헨션 : 리스트를 초기화하는 방법 
+1) 0~19까지 수 중 홀수만 포함하는 리스트
+   array=[i for i in range(20) if i%2==1]
+2) 1~9까지 수의 제곱 값을 포함하는 리스트
+   array=[i*i for i in range(1,10)]
+
+중요) 2차원 리스트 초기화
+n=3 m=3
+array=[[0]*m for _ in range(n)]   
+

@@ -54,3 +54,21 @@ upper()함수는 문자열을 대문자로 바꿔준다.
 set함수가 중복제거해준다.
 
 안되는 경우에 대해 생각해보자+슬라이싱 1316.py
+
+array=[]
+reverse 함수는 return 하는게 없다. 그냥 바꿔버림
+array.reverse() 하면 array가 바뀜
+reversed(array)하면  ‘listreverseiterator’를 반환 
+list로 출력하려면 list(reversed(array))처럼 사용하자
+
+sort 함수도 마찬가지 return 하는게 없다.
+sorted(array)하면 새로운 리스트 반환
+array=sorted(array,reverse=True) 하면 내림차순 정렬
+sorted(array,key=setting) 하면 setting 함수가 정렬기준이된다.
+def seeting(data):
+    return data[1] //예시로 1번째 인덱스 return 하는 함수
+
+result = sorted(array,key=lambda student:student[1])   
+sorted할건데 student를 매개변수로해서 return student[1]을 기준으로 오름차순
+
+ a[i],b[i]=b[i],a[i] //swap 연산

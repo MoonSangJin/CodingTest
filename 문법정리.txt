@@ -83,3 +83,18 @@ sorted할건데 student를 매개변수로해서 return student[1]을 기준으�
 알파벳 sort는 앞글자기준 같으면 그다음글자 비교해서 sort함
 
 lower(),upper() 함수는 실행만시키면 원본 문자열은 변화 없음 lower하거나 upper한걸 return함
+
+#zip함수
+Number = [1,2,3,4]
+Name = ['hong','gil','dong','nim']
+Number_Name = list(zip(Number,name))
+print(Number_Name)
+결과 : [(1 ,'hong'), (2 ,'gil'), (3 ,'dong'), (4 ,'nim')]
+
+Number = [1,2,3,4]
+Name = ['hong','gil','dong','nim']
+dic = {}
+for number , name in zip(Number,Name): 
+    dic[number] = name
+print(dic)
+결과 : {1 : 'hong' , 2 : 'gil' , 3 : 'dong' , 4 : 'nim'}

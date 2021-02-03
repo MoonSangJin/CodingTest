@@ -98,3 +98,9 @@ for number , name in zip(Number,Name):
     dic[number] = name
 print(dic)
 결과 : {1 : 'hong' , 2 : 'gil' , 3 : 'dong' , 4 : 'nim'}
+
+사전자료형
+data = {'A':'best!!!', 'B':'good!!', 'C':'run!', 'D':'slowly~'}
+print(data['A']) 하면 'best!!!'
+data.keys()하면 dict_keys(['A', 'B', 'C', 'D'])
+data.values()하면 dict_values(['best!!!', 'good!!', 'run!', 'slowly~'])

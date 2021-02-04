@@ -8,7 +8,7 @@ def solution(board, moves):
     for move in moves: #move가 세로열이 되는데
         for i in range(len(board)): #세로열 고정된 상태로 수직으로 내려가야됨
             if board[i][move-1]>0: #0보다 크면 인형이 있느 상태
-                bucket.append(board[i][move-1]) #buckt 리스트에 추가해주고
+                bucket.append(board[i][move-1]) #bucket 리스트에 추가해주고
                 board[i][move-1]=0 #다시 비워둔다
                 if len(bucket)>=2: #버킷에 최소 2개 이상은 있어야 서로 지워질 수 있고
                     if bucket[-1]==bucket[-2]: #맨 마지막꺼랑 맨 마지막에서 두번째꺼가 같으면 사라질것

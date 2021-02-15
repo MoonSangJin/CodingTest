@@ -1,3 +1,2 @@
-grade = input()
-data = {'A':'best!!!', 'B':'good!!', 'C':'run!', 'D':'slowly~'}
-print(data.values())
+hi=[False]*100
+print(hi)

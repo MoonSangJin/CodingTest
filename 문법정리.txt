@@ -167,3 +167,6 @@ data.values()하면 dict_values(['best!!!', 'good!!', 'run!', 'slowly~'])
  a=pow(2,3) 하면 2의3제곱인 8
  pow(n,0.5) 하면 루트n과 같음
  a가 1.46545465일때 int(a)하면 1
+
+print(result)   ==> ['A','B','C','K','K','13']
+print(''.join(result))    ==>ABCKK13

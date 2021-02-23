@@ -14,7 +14,7 @@ def solution(s):
             else:
                 compressed+=str(count)+splited[j-1] if count>1 else splited[j-1]
                 count=1
-        compressed+=str(count)+splited[-1] if count>1 else splited[-1]            
+        compressed+=str(count)+splited[-1] if count>1 else splited[-1] #맨 마지막거 처리 위해서       
         cand.append(len(compressed))
         
     return min(cand)

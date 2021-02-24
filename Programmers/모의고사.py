@@ -13,7 +13,7 @@ def solution(answers):
         if(answers[i] == c[i % len(c)]):
             count3 += 1  # 여기까지하면 count1,count2,count3에 각각의 정답 갯수가 담긴다 이걸 어떻게 비교할까
     answer_temp = [count1, count2, count3]
-    # enumberate함수를 사용하면 인덱스랑 인덱스의 값을 튜플() 로 반환한다.
+    # enumerate함수를 사용하면 인덱스랑 인덱스의 값을 튜플() 로 반환한다.
     for index, value in enumerate(answer_temp):
         if(value == max(answer_temp)):  # 그런데 for문 돌면서 value가 각 인덱스의 값이 될텐데 max값과 같은거면 그 인덱스가 가장 많이 맞힌사람
             # 그냥 index+1(시작이 0이니까)을 return 하지 않고 append를 쓴이유는 같은 개수를 맞힌 사람이 여러명이 있을 수도 있다.

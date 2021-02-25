@@ -20,6 +20,15 @@ for i in range(len(data)): //문자열도 배열이니까 인덱스 존재
 
 enumerate 함수는 index랑 value를 튜플로 반환하는데 보통 for문에서 많이 쓰인다.
 
+dict1 = {'이름': '한사람', '나이': 33}
+data = enumerate(dict1)
+for i, key in data:
+    print(i, ":", key, '->', dict1[key])
+print()
+하면
+0 : 이름 -> 한사람
+1 : 나이 -> 33
+나온다 
 
 2진수 : bin()
 8진수 : oct()
@@ -171,3 +180,15 @@ data.values()하면 dict_values(['best!!!', 'good!!', 'run!', 'slowly~'])
 print(result)   ==> ['A','B','C','K','K','13']
 print(''.join(result))    ==>ABCKK13
 붙여쓰기 할때 씀
+
+a='hijino'
+b=list(a)
+b.reverse()
+b=''.join(b)
+print(b)  하면
+
+a='hijino'
+b=a[::-1]
+print(b)  하면
+
+onijih

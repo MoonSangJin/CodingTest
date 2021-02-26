@@ -186,6 +186,7 @@ b=list(a)
 b.reverse()
 b=''.join(b)
 print(b)  하면
+onijih
 
 a='hijino'
 b=a[::-1]

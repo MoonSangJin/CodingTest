@@ -3,7 +3,5 @@
 # for i, key in data:
 #     print(i, ":", key, '->', dict1[key])
 # print()
-
-a='hijino'
-b=a[::-1]
-print(b)
+abc='abba'
+print(abc.find('a'))

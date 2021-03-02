@@ -3,5 +3,5 @@
 # for i, key in data:
 #     print(i, ":", key, '->', dict1[key])
 # print()
-abc='abba'
-print(abc.find('a'))
+data=list(map(lambda x:(x[0],x[1%len(x)],x[2%len(x)],x[3%len(x)]),['12','121']))
+print(data)

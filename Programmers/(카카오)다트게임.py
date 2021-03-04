@@ -1,3 +1,4 @@
+#정규표현식
 import re
 def solution(dartResult):
     bonus = {'S' : 1, 'D' : 2, 'T' : 3}

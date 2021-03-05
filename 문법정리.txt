@@ -209,3 +209,5 @@ onijih
 input() 대신 
 from sys import stdin
 input()자리에 sys.stdin.readline() 써보자
+
+꿀팁 저장소:https://breakcoding.tistory.com/109

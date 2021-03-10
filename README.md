@@ -382,6 +382,13 @@ a,b=input().split('.') //.을 기준으로 문자열 두개를 받는데
 print(a+b) 하면 붙여서 문자열로나오는데
 print(a,b) 하면 a나오고 한 칸 띄고(스페이스) b가 나온다
 
+key=stdin.readline().rstrip() // stdin.readline()에서 입력이 엔터치고 들어올때 즉 한줄씩 들어올때는 \n 제거를 위해 rstrip() 사용해야한다.
+
+
+입력이 10만이상이면
+input() 대신 
+from sys import stdin
+input()자리에 sys.stdin.readline() 써보자
 
 
 ```

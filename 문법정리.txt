@@ -205,9 +205,22 @@ onijih
 1. 탐색할 배열이 정렬되었는가
 2. 종료 조건이 존재하는가
 
-시간초과나면
+입력이 10만이상이면
 input() 대신 
 from sys import stdin
 input()자리에 sys.stdin.readline() 써보자
 
 꿀팁 저장소:https://breakcoding.tistory.com/109
+
+dfs 할 때 생각할것
+row,column 으로 2차원 리스트만들기
+
+value로 key값 찾는함수
+def get_key(val):
+    for key, value in dic.items():
+         if val == value:
+             return key
+ 
+    return "There is no such Key"
+
+key=stdin.readline().rstrip() // stdin.readline()에서 입력이 엔터치고 들어올때 즉 한줄씩 들어올때는 \n 제거를 위해 rstrip() 사용해야한다.

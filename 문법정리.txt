@@ -224,3 +224,6 @@ def get_key(val):
     return "There is no such Key"
 
 key=stdin.readline().rstrip() // stdin.readline()에서 입력이 엔터치고 들어올때 즉 한줄씩 들어올때는 \n 제거를 위해 rstrip() 사용해야한다.
+
+answer = list(set(not_listened) & set(not_seen)) // not_listened 리스트와 not_seen 리스트에서 중복되는 값을 리스트로 바로 만들어줌
+for 문 돌면서 in 써서 안에 있는지 체크하는거 보다 훨씬 빠름

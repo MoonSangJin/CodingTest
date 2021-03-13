@@ -1,3 +1,4 @@
+#stack
 no_message=False
 stack=[]
 answer=[]

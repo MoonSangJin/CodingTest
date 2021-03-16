@@ -227,3 +227,13 @@ key=stdin.readline().rstrip() // stdin.readline()에서 입력이 엔터치고 �
 
 answer = list(set(not_listened) & set(not_seen)) // not_listened 리스트와 not_seen 리스트에서 중복되는 값을 리스트로 바로 만들어줌
 for 문 돌면서 in 써서 안에 있는지 체크하는거 보다 훨씬 빠름
+
+최소 힙, 최대 힙
+from heapq import heappop,heappush 사용하면 heapq.heappop이 아니라 그냥 heappop 사용가능(heappush도 마찬가지)
+array=[] 만들어두고
+num=int(input())일때
+heappush(array,num),heappop(array)하면
+default 최소힙으로 부모노드가 더 작게 push, 가장 작은값 pop 해줌
+*최대힙*
+heappush(array,(-num)) //음수로 넣어주면 최대힙 완성
+-1*heappop(array) 하면 가장 큰 값 나오고 음수로 저장해뒀으니까 -1 곱해서 나와야 원하는 값

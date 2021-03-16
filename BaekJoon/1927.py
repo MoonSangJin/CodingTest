@@ -1,4 +1,4 @@
-#우선순위큐, 힙
+#우선순위큐, 힙,최쇠힙
 from heapq import heappop,heappush
 from sys import stdin
 input=stdin.readline

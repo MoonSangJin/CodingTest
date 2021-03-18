@@ -1,4 +1,4 @@
-#dfs,bfs 개념
+#dfs,bfs 개념 (입력 두개씩 들어오는것)
 from collections import deque
 
 n,m,v=map(int,input().split())

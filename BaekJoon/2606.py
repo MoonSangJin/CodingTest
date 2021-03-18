@@ -1,4 +1,4 @@
-#dfs
+#dfs (입력 두개씩 들어오는것)
 n=int(input())
 pair=int(input())
 graph=[[] for _ in range(n+1)]

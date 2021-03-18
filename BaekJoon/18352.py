@@ -1,5 +1,6 @@
 #bfs
-#그래프에서 모든 간선의 비용이 동일하면 BFS 사용한다. 
+#그래프에서 모든 간선의 비용이 동일하면 BFS 사용한다.
+# 입력 값에 따라 visited 사용 유무 결정 
 from collections import deque
 
 n,m,k,x=map(int,input().split())

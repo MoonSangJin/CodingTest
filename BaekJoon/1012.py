@@ -1,4 +1,4 @@
-#dfs
+#dfs (입력 두개씩 들어오는것)
 import sys
 sys.setrecursionlimit(10**6)
 

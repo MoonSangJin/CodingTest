@@ -244,3 +244,12 @@ key=lambda x:-x reverse=True
 2.브루트포스
 3.dfs,bfs
 4.해쉬
+
+
+check=list(map(lambda x: True if x>=K else False,heap))
+        if all(check):
+            cnt+=1
+            answer=cnt
+            break   
+        else:
+            cnt+=1

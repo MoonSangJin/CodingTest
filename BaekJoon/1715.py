@@ -1,4 +1,4 @@
-#그리디,정렬,우선순위큐,힙
+#그리디,정렬,우선순위큐,힙(sort)
 from heapq import heappop,heappush
 n=int(input())
 data=[]

@@ -1,8 +1,9 @@
 #dfs
 def solution(n, computers):
     answer = 0
-    graph=[[]*n for _ in range(n)]
-    visited=[False for i in range(n)]
+    graph=[[] for _ in range(n)]
+    visited=[False]*n
+    print(graph,visited)
     for i in range(n):
         for j in range(n):
             if i!=j and computers[i][j]==1:

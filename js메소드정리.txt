@@ -1,0 +1,11 @@
+for문에서 길이 만큼 반복 for(let i=0; i<commands.length; i++)
+
+배열 max값 찾을때
+temp=[]
+let max_number=Math.max(...temp);
+
+slice 사용법
+let temp=[1,2,3,4,5,6]
+temp=temp.slice(2,5)
+console.log(temp)
+//[3,4,5]

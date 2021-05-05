@@ -9,3 +9,28 @@ let temp=[1,2,3,4,5,6]
 temp=temp.slice(2,5)
 console.log(temp)
 //[3,4,5]
+
+
+
+splice 사용법 (특정원소 제거할때, 변경이나 추가도 가능)
+let a=[1,2,3,4]
+const idx=a.indexOf(3) //idx는 2
+a.splice(idx,1) //idx위치에서 시작해서 1개 제거
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum');
+// 2번인덱스에서 시작해서 하나도 제거하지않고 drum만 추가
+// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
+// removed is [], no elements removed
+
+var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
+var removed = myFish.splice(2, 1, 'trumpet');
+// 2번 인덱스에서 한 개 요소 제거하고 "trumpet" 추가
+// myFish is ["angel", "clown", "trumpet", "sturgeon"]
+// removed is ["drum"]
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2);
+// 2번 인덱스를 포함해서 이후의 모든 요소 제거
+// myFish is ["angel", "clown"]
+// removed is ["mandarin", "sturgeon"]

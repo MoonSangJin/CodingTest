@@ -34,3 +34,7 @@ var removed = myFish.splice(2);
 // 2번 인덱스를 포함해서 이후의 모든 요소 제거
 // myFish is ["angel", "clown"]
 // removed is ["mandarin", "sturgeon"]
+
+
+shift
+unshift

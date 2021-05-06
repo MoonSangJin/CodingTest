@@ -35,6 +35,9 @@ var removed = myFish.splice(2);
 // myFish is ["angel", "clown"]
 // removed is ["mandarin", "sturgeon"]
 
+set으로 중복제거 후 리스트변환
+let a = new Set(~);
+let numbe = [...a]
 
 shift
 unshift

@@ -1,0 +1,14 @@
+1) WEB SERVER 와 WAS 차이
+WEB SERVER : 정적 컨텐츠 (html,css) 제공하는 서버 
+ex)Apache,Nginx
+정적 컨텐츠는 경로와 일치하는 file contents에 해당한다.
+클라이언트로부터 요청받음
+요청이 정적 컨텐츠 요청이면 제공해주면 되고, 동적 컨텐츠 요청이면 WAS에게 전달한다.
+
+WAS : 동적 컨텐츠(DB조회,) 제공하는 서버, 컨테이너라고도 부른다.
+웹서버로부터 요청받음
+
+WAS가 정적,동적 처리 모두 가능하지만 이 경우, 부하가 심해져 좋지 않다.
+Load Balancing을 위해 WEB SERVER 사용
+
+구조 : CLIENT <-> WEB SERVER <-> WAS(WEB CONTAINER) <-> DATABASE

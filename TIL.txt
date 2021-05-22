@@ -12,3 +12,5 @@ WAS가 정적,동적 처리 모두 가능하지만 이 경우, 부하가 심해�
 Load Balancing을 위해 WEB SERVER 사용
 
 구조 : CLIENT <-> WEB SERVER <-> WAS(WEB CONTAINER) <-> DATABASE
+
+복기) 인덱스돌아가며 0되는거 찾기, 동시 다발적 bfs?, 10일중 X 4개가 들어갈 수 있는 경우의 수 구하기

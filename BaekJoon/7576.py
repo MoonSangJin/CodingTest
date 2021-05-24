@@ -14,7 +14,7 @@ dy = [0, 0, -1, 1]
 def bfs():
     days=0    
     while queue:
-        days+=1
+        days+=1 #한번 퍼져나갈때마다 하루씩 증가
         for _ in range(len(queue)): #이 for문 의미 => bfs를 동시에 돌려야됨
             x,y=queue.popleft() 
             for i in range(4):
@@ -22,8 +22,8 @@ def bfs():
                 ny = y+dy[i]
                 if nx < 0 or ny < 0 or nx >= n or ny >= m: #범위 벗어나는거면 무시
                     continue
-                if graph[nx][ny] == 0:
-                    graph[nx][ny]=1
+                if graph[nx][ny] == 0: #익을 수 있는 부분이면
+                    graph[nx][ny]=1 #익혀
                     queue.append((nx,ny))
     return days
 

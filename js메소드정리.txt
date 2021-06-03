@@ -43,5 +43,10 @@ let values = [3, 1, 3, 5, 2, 4, 4, 4];
 let uniqueValues = [...new Set(values)];
 // uniqueValues is [3, 1, 5, 2, 4]
 
-shift
-unshift
+배열에 값을 추가하는 함수
+.push() : 배열의 맨 끝에 값을 추가한다.
+.unshift() : 배열의 맨 앞에 값을 추가한다.
+
+배열에 값을 제거하는 함수
+.pop() : 배열의 맨 끝에 값을 제거한다.
+.shift() : 배열의 맨 앞에 값을 제거한다.
